@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+    <head>
+
+        <style>
+
+            *{
+                box-sizing: border-box;
+            }
+
+            html,body{
+                height:100%;
+            }
+
+            body{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: center;
+                flex-wrap: wrap;
+                align-content: center;
+                background: linear-gradient(top, yellow, red, purple, orange, pink);
+            }
+
+            [class$="face"]{
+                margin:16px;
+                padding:4px;
+                background-color: white;
+                border: 2px solid black;
+                width:105px;
+                height:105px;
+                object-fit: contain;
+                border-radius: 10%;
+            }
+
+            .pip{
+                display: block;
+                width:24px;
+                height:24px;
+                border-radius: 50%;
+                margin:4px;
+                background-color: black;
+            
+            }
+
+            .first-face{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+.first-face:hover{
+    background-image:url("one.png");
+    opacity: 1.0;
+    z-index: 0;
+    content-visibility:hidden;
+
+}
+.second-face:hover{
+    background-image:url("two.png");
+    opacity: 1.0;
+    z-index: 0;
+    content-visibility:hidden;
+
+}
+.third-face:hover{
+    background-image:url("three.png");
+    z-index:-999;
+    content-visibility:hidden;
+
+}
+.fourth-face:hover{
+    background-image:url("four.png");
+    opacity: 1.0;
+    z-index: 0;
+    content-visibility:hidden;
+
+}
+.fifth-face:hover{
+    background-image:url("five.png");
+    opacity: 1.0;
+    z-index: 0;
+    content-visibility:hidden;
+    
+
+}
+.sixth-face:hover{
+    background-image:url("six.png");
+    opacity: 1.0;
+    z-index: 0;
+    content-visibility:hidden;
+
+}
+            .second-face{
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .second-face .pip:nth-of-type(2){
+                align-self: flex-end;
+            }
+
+            .third-face{
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .third-face .pip:nth-of-type(2){
+                align-self: center;
+            }
+
+            .third-face .pip:nth-of-type(3){
+                align-self: flex-end;
+            }
+
+            .fourth-face, .sixth-face{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .fourth-face .column, .sixth-face .column{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .fifth-face{
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .fifth-face .column{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+
+            .fifth-face .column:nth-of-type(2){
+                justify-content: center;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="first-face">
+            <span class="pip"></span>
+        </div>
+
+        <div class="second-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+
+        <div class="third-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+
+        <div class="fourth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+        </div>
+
+        <div class="fifth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+            <div class="column">
+                <span class="pip"></span>
+            </div>
+
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+        </div>
+
+        <div class="sixth-face">
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+            <div class="column">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+
+        </div>
+
+        
+
+
+    </body>
+</html>
